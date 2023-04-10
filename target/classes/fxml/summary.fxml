@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.coco.controller.SummaryController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button fx:id="jumpBackButton" layoutX="526.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBack" text="back" />
+        <Button layoutX="202.0" layoutY="14.0" mnemonicParsing="false">
+            <graphic>
+                <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/image/summary.jpeg" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+
+</AnchorPane>
+
