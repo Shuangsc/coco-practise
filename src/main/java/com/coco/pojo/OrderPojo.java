@@ -115,6 +115,30 @@ public class OrderPojo {
     public void setDescriptionProperty(String descriptionProperty) {
         this.descriptionProperty.set(descriptionProperty);
     }
+    
+    public void setOrderId(int orderId) {
+    	this.orderId = orderId;
+    }
+    
+    public void setUserId(int userId) {
+    	this.userId = userId;
+    }
+    
+    public void setType(String type) {
+    	this.type = type;
+    }
+    
+    public void setAmount(double amount) {
+    	this.amount = amount;
+    }
+    
+    public void setDate(String date) {
+    	this.date = date;
+    }
+    
+    public void setDescription(String description) {
+    	this.description = description;
+    }
 
     public OrderPojo(int orderId, int userId, String type, double amount, String date, String description){
 

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d723a9a-ba6f-4803-acf7-a6ab13d86642" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/pojo/OrderPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/pojo/OrderPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/pojo/OrderPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/pojo/OrderPojo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/history.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1-sources.jar!/javafx/scene/control/TableView.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2NFXnSmYqrwsGNq8bJszKdcJU8Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tiantian/IdeaProjects/coco-practise&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;b2b0ca5fc5c13b4a48677cb23eb95ee2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.coco.view" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CocoPractiseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="coco-practise" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coco.CocoPractiseApplication" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;$USER_HOME$/Downloads/JavaFX-SDK/javafx-sdk-19.0.2.1/lib&quot; --add-modules=javafx.controls,javafx.fxml " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d723a9a-ba6f-4803-acf7-a6ab13d86642" name="Changes" comment="" />
+      <created>1679260970821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679260970821</updated>
+      <workItem from="1679260972575" duration="2212000" />
+      <workItem from="1679263192122" duration="50000" />
+      <workItem from="1679263306472" duration="15530000" />
+      <workItem from="1679287683076" duration="8498000" />
+      <workItem from="1680737672060" duration="1005000" />
+      <workItem from="1680738687136" duration="6000" />
+      <workItem from="1680738800657" duration="2264000" />
+      <workItem from="1680754683928" duration="12033000" />
+      <workItem from="1680844762183" duration="1751000" />
+      <workItem from="1680846519621" duration="16706000" />
+      <workItem from="1680925861309" duration="4243000" />
+      <workItem from="1681016120290" duration="12820000" />
+      <workItem from="1681051836593" duration="81000" />
+      <workItem from="1681051996703" duration="29000" />
+      <workItem from="1681094957239" duration="7086000" />
+      <workItem from="1681152420047" duration="80000" />
+      <workItem from="1681152658226" duration="15644000" />
+      <workItem from="1681270709165" duration="73000" />
+      <workItem from="1681274845841" duration="490000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
