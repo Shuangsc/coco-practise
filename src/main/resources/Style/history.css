@@ -1,0 +1,79 @@
+.dashboard {
+    -fx-background-color: #EEEEEE;
+}
+
+.user_name {
+    -fx-font-size: 2.6em;
+    -fx-font-family: "Calibri Light";
+}
+
+.date_lbl {
+    -fx-text-fill: #111111;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+}
+
+.account {
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 0, 10);
+}
+
+
+.account VBox {
+    -fx-background-color: #FFFFFF;
+}
+
+.account_gradient {
+    -fx-background-color: linear-gradient(to right, #708090, #778899);
+}
+
+.account Text {
+    -fx-fill: #FFFFFF;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.account_balance {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: Calibri;
+    -fx-font-size: 3em;
+    -fx-font-weight: bold;
+}
+
+.summary_view {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 5 10 5 10;
+    -fx-spacing: 5;
+    -fx-alignment: center_left;
+}
+
+.acc_summary_container {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center_left;
+    -fx-border-radius: 10;
+    -fx-border-color: #999999;
+    -fx-border-width: 1;
+    -fx-border-style: dashed;
+}
+
+.acc_summary_container Line {
+    -fx-stroke: #AAAAAA;
+}
+
+.income_amount {
+    -fx-text-fill: #00AA00;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.expense_amount {
+    -fx-text-fill: #AA0000;
+    -fx-font-family: "Calibri Light";
+    -fx-font-size: 1.5em;
+}
+
+.section_title {
+   -fx-font-family: "Calibri Light";
+   -fx-font-size: 1.4em;
+}

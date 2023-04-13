@@ -12,16 +12,13 @@ import de.felixroske.jfxsupport.FXMLController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-import javafx.scene.control.Button;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import jdk.javadoc.internal.doclets.formats.html.markup.Text;
 
 import java.net.URL;
 import java.util.List;
@@ -30,8 +27,21 @@ import java.util.ResourceBundle;
 
 @FXMLController
 
-public class HistoryController implements Initializable{
+public class HistoryController {
 
+    @FXML
+    private Button jumpSumButton;
+
+    @FXML
+    private Button jumpBokButton;
+
+    @FXML
+    private ListView<?> listView;
+
+    @FXML
+    private Text user;
+
+    /*
     @FXML
     private Button addButton;
 
@@ -76,7 +86,9 @@ public class HistoryController implements Initializable{
 
     @FXML
     private TableColumn<OrderPojo, String> descriptionCol;
+     */
 
+    /*
     @FXML
     void onAdd(ActionEvent event) {
         OrderService orderService = SpringContextUtil.getBean(OrderService.class);
@@ -114,6 +126,7 @@ public class HistoryController implements Initializable{
         reFreshTable();
 
     }
+     */
 
     @FXML
     void onJumpSum(ActionEvent event) {
@@ -128,10 +141,10 @@ public class HistoryController implements Initializable{
         Stage stage = CocoPractiseApplication.getStage();
         stage.close();
         CocoPractiseApplication.showView(BookkeepingView.class);
-
     }
 
 
+    /*
     @Override
     public void initialize(URL location, ResourceBundle resources){
 
@@ -156,6 +169,7 @@ public class HistoryController implements Initializable{
         ObservableList<OrderPojo> observableList  = FXCollections.observableList(list);
         tableView.setItems(observableList);
     }
+     */
 }
 
 
