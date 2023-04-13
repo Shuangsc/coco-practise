@@ -1,6 +1,7 @@
 package com.coco;
 
-import com.coco.view.HistoryView;
+//import com.coco.view.HistoryView;
+import com.coco.view.LoginView;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CocoPractiseApplication extends AbstractJavaFxApplicationSupport {
 
     public static void main(String[] args) {
-        launch(CocoPractiseApplication.class, HistoryView.class,args);
+        launch(CocoPractiseApplication.class, LoginView.class,args);
 
     }
 

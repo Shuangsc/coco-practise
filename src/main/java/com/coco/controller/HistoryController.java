@@ -97,7 +97,6 @@ public class HistoryController implements Initializable{
         OrderService orderService = SpringContextUtil.getBean(OrderService.class);
         orderService.orderDelete(Integer.parseInt(orderIdField.getText()));
         reFreshTable();
-
     }
 
     @FXML

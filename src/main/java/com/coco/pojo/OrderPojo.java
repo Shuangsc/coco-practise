@@ -7,8 +7,6 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import javafx.beans.property.*;
 import lombok.Data;
 
-import java.util.Date;
-
 @TableName("order_info")
 @Data
 public class OrderPojo {
@@ -27,7 +25,6 @@ public class OrderPojo {
     private StringProperty descriptionProperty = new SimpleStringProperty();
 
 
-   // @TableId(value = "orderId",type= IdType.ASSIGN_ID)
     @TableId(value = "orderId",type= IdType.ASSIGN_ID)
 
     private int orderId;

@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d723a9a-ba6f-4803-acf7-a6ab13d86642" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/common/Encryption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/pojo/UserPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/coco/view/LoginView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/CocoPractiseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/CocoPractiseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/controller/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/controller/HistoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/pojo/OrderPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/pojo/OrderPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/coco/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/coco/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/CocoPractiseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/CocoPractiseApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/BookkeepingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/BookkeepingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/HistoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/controller/SummaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/controller/SummaryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/dao/OrderDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/coco/pojo/OrderPojo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/pojo/OrderPojo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/history.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/history.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/util/SpringContextUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/util/SpringContextUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/view/BookkeepingView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/view/BookkeepingView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/view/HistoryView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/view/HistoryView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/coco/view/SummaryView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/coco/view/SummaryView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -44,6 +64,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NFXnSmYqrwsGNq8bJszKdcJU8Z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +80,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tiantian/IdeaProjects/coco-practise&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tiantian/IdeaProjects/coco-practise/src/main/resources/image&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -77,6 +100,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/image" />
     </key>
@@ -125,7 +151,12 @@
       <workItem from="1681152420047" duration="80000" />
       <workItem from="1681152658226" duration="15644000" />
       <workItem from="1681270709165" duration="73000" />
-      <workItem from="1681274845841" duration="490000" />
+      <workItem from="1681274845841" duration="1126000" />
+      <workItem from="1681279108721" duration="6000" />
+      <workItem from="1681280925254" duration="1134000" />
+      <workItem from="1681317291005" duration="11841000" />
+      <workItem from="1681351036338" duration="3789000" />
+      <workItem from="1681355904038" duration="6858000" />
     </task>
     <servers />
   </component>
