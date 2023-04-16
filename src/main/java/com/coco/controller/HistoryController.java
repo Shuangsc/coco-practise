@@ -2,6 +2,7 @@ package com.coco.controller;
 
 import com.coco.CocoPractiseApplication;
 import com.coco.common.OrderNumber;
+import com.coco.config.Config;
 import com.coco.pojo.OrderPojo;
 import com.coco.service.OrderService;
 import com.coco.util.SpringContextUtil;
@@ -9,6 +10,8 @@ import com.coco.view.BookkeepingView;
 import com.coco.view.SummaryView;
 import de.felixroske.jfxsupport.FXMLController;
 
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
@@ -17,17 +20,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import jdk.javadoc.internal.doclets.formats.html.markup.Text;
+//import jdk.javadoc.internal.doclets.formats.html.markup.Text;
 
 import java.net.URL;
+import java.text.NumberFormat;
 import java.util.List;
 import java.util.ResourceBundle;
 
 
 @FXMLController
 
-public class HistoryController {
+public class HistoryController implements Initializable {
 
     @FXML
     private Button jumpSumButton;
@@ -40,6 +45,32 @@ public class HistoryController {
 
     @FXML
     private Text user;
+
+    @FXML
+    private Label expenseTxt;
+
+    @FXML
+    private Label incomeTxt;
+
+
+    @FXML
+    private Label totalTxt;
+
+    @FXML
+    private TableView<OrderPojo> tableView;
+
+    @FXML
+    private TableColumn<OrderPojo, DoubleProperty> amountColumn;
+
+    @FXML
+    private TableColumn<OrderPojo, StringProperty> dateColumn;
+
+    @FXML
+    private TableColumn<OrderPojo, StringProperty> descriptColumn;
+
+    @FXML
+    private TableColumn<OrderPojo, StringProperty> typeColumn;
+
 
     /*
     @FXML
@@ -144,32 +175,59 @@ public class HistoryController {
     }
 
 
-    /*
+
     @Override
     public void initialize(URL location, ResourceBundle resources){
 
-        orderIdCol.setCellValueFactory(new PropertyValueFactory<>("orderIdProperty"));
-
-        userIdCol.setCellValueFactory(new PropertyValueFactory<>("userIdProperty"));
-
-        typeCol.setCellValueFactory(new PropertyValueFactory<>("typeProperty"));
-
-        amountCol.setCellValueFactory(new PropertyValueFactory<>("amountProperty"));
-
-        dateCol.setCellValueFactory(new PropertyValueFactory<>("dateProperty"));
-
-        descriptionCol.setCellValueFactory(new PropertyValueFactory<>("descriptionProperty"));
-
-        reFreshTable();
-    }
-
-    public void reFreshTable(){
+        typeColumn.setCellValueFactory(new PropertyValueFactory<>("typeProperty"));
+        dateColumn.setCellValueFactory(new PropertyValueFactory<>("dateProperty"));
+        amountColumn.setCellValueFactory(new PropertyValueFactory<>("amountProperty"));
+        descriptColumn.setCellValueFactory(new PropertyValueFactory<>("descriptionProperty"));
         OrderService orderService = SpringContextUtil.getBean(OrderService.class);
-        List<OrderPojo> list = orderService.findAll();
+        List<OrderPojo> list = orderService.findByUserId(Config.loginUser.getUserId());
+        double sum =0;
+        for (int i = 0; i <list.size() ; i++) {
+            sum+= list.get(i).getAmount();
+        }
+
+        NumberFormat nf = NumberFormat.getNumberInstance();
+        nf.setMaximumFractionDigits(2);
+        String formatted = nf.format(sum);
+        totalTxt.setText(formatted+"");
+
         ObservableList<OrderPojo> observableList  = FXCollections.observableList(list);
         tableView.setItems(observableList);
+
+        user.setText(Config.loginUser.getUserName());
+
+        List<OrderPojo> inComeList = orderService.findIncomeList(Config.loginUser.getUserId());
+        double income =0;
+        for (int i = 0; i <inComeList.size() ; i++) {
+            income+= inComeList.get(i).getAmount();
+        }
+//
+        String incomeStr = nf.format(income);
+        incomeTxt.setText(incomeStr+"");
+
+
+        List<OrderPojo> outComeList = orderService.findoutComeList(Config.loginUser.getUserId());
+        double outCome =0;
+        for (int i = 0; i <outComeList.size() ; i++) {
+            outCome+= outComeList.get(i).getAmount();
+        }
+
+        String outComeStr = nf.format(outCome);
+        expenseTxt.setText(outComeStr+"");
+
     }
-     */
+
+//    public void reFreshTable(){
+//        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
+//        List<OrderPojo> list = orderService.findAll();
+//        ObservableList<OrderPojo> observableList  = FXCollections.observableList(list);
+//        tableView.setItems(observableList);
+//    }
+//     */
 }
 
 
