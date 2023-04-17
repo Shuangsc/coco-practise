@@ -3,6 +3,7 @@ package com.coco.controller;
 import com.coco.CocoPractiseApplication;
 import com.coco.common.Encryption;
 import com.coco.common.OrderNumber;
+import com.coco.config.Config;
 import com.coco.pojo.UserPojo;
 import com.coco.service.UserService;
 import com.coco.util.SpringContextUtil;
@@ -71,6 +72,7 @@ public class LoginController{
         if(password.equals(encryptor.decrypt(encryptedPassword,encryptionKey))){
             Stage stage = CocoPractiseApplication.getStage();
             stage.close();
+            Config.loginUser =  userInfo.get(0);
             CocoPractiseApplication.showView(HistoryView.class);
 
         } else {

@@ -29,4 +29,24 @@ public class OrderService {
     public List<OrderPojo> findAll(){
         return orderDao.selectList(new QueryWrapper<OrderPojo>());
     }
+
+    public List<OrderPojo> findByUserId(Integer userId){
+        QueryWrapper<OrderPojo> queryWrapper = new QueryWrapper<OrderPojo>();
+        queryWrapper.eq("userId",userId);
+        return orderDao.selectList(queryWrapper);
+    }
+
+    public List<OrderPojo> findIncomeList(int userId) {
+        QueryWrapper<OrderPojo> queryWrapper = new QueryWrapper<OrderPojo>();
+        queryWrapper.gt("amount",0);
+        queryWrapper.eq("userId",userId);
+        return orderDao.selectList(queryWrapper);
+    }
+
+    public List<OrderPojo> findoutComeList(int userId) {
+        QueryWrapper<OrderPojo> queryWrapper = new QueryWrapper<OrderPojo>();
+        queryWrapper.lt("amount",0);
+        queryWrapper.eq("userId",userId);
+        return orderDao.selectList(queryWrapper);
+    }
 }
