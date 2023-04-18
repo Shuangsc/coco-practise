@@ -189,7 +189,7 @@ public class HistoryController implements Initializable {
         List<OrderPojo> list = orderService.findByUserId(Config.loginUser.getUserId());
         double sum =0;
         for (int i = 0; i <list.size() ; i++) {
-            sum+= list.get(i).getAmount();
+            sum-= list.get(i).getAmount();
         }
 
         NumberFormat nf = NumberFormat.getNumberInstance();
@@ -209,7 +209,7 @@ public class HistoryController implements Initializable {
         }
 //
         String incomeStr = nf.format(income);
-        incomeTxt.setText(incomeStr+"");
+        expenseTxt.setText(incomeStr+"");
 
 
         List<OrderPojo> outComeList = orderService.findoutComeList(Config.loginUser.getUserId());
@@ -219,7 +219,7 @@ public class HistoryController implements Initializable {
         }
 
         String outComeStr = nf.format(outCome);
-        expenseTxt.setText(outComeStr+"");
+        incomeTxt.setText(outComeStr+"");
 
     }
 
