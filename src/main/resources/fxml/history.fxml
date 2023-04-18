@@ -21,7 +21,6 @@
       <Text layoutX="26.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 1.4em; -fx-font-family: Calibri Light;" text="Account Summary" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="115.05078125" />
        <Button fx:id="jumpSumButton" layoutX="508.0" layoutY="167.0" mnemonicParsing="false" onAction="#onJumpSum" text="jumpChartPage" />
        <Button fx:id="jumpBokButton" layoutX="509.0" layoutY="260.0" mnemonicParsing="false" onAction="#onJumpBok" text="jumpExpenditurePage" />
-      <Label layoutX="475.0" layoutY="47.0" styleClass="date_lbl" stylesheets="@../Style/history.css" text="Today, 4/13/2023" AnchorPane.rightAnchor="45.66666666666663" AnchorPane.topAnchor="47.0" />
       <Text layoutX="20.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <HBox layoutX="26.0" layoutY="143.0" prefHeight="234.0" prefWidth="296.0" stylesheets="@../Style/history.css">
          <children>
