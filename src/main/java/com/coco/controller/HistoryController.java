@@ -7,6 +7,8 @@ import com.coco.pojo.OrderPojo;
 import com.coco.service.OrderService;
 import com.coco.util.SpringContextUtil;
 import com.coco.view.BookkeepingView;
+import com.coco.view.ChartPageView;
+import com.coco.view.ExpenditurePageView;
 import com.coco.view.SummaryView;
 import de.felixroske.jfxsupport.FXMLController;
 
@@ -163,15 +165,15 @@ public class HistoryController implements Initializable {
     void onJumpSum(ActionEvent event) {
         Stage stage = CocoPractiseApplication.getStage();
         stage.close();
-        CocoPractiseApplication.showView(SummaryView.class);
+        CocoPractiseApplication.showView(ChartPageView.class);
 
     }
 
     @FXML
     void onJumpBok(ActionEvent event) {
         Stage stage = CocoPractiseApplication.getStage();
-        stage.close();
-        CocoPractiseApplication.showView(BookkeepingView.class);
+//        stage.close();
+        CocoPractiseApplication.showView(ExpenditurePageView.class);
     }
 
 

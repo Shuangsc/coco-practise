@@ -3,6 +3,7 @@ package com.coco.controller;
 import com.coco.CocoPractiseApplication;
 import com.coco.common.Encryption;
 import com.coco.common.OrderNumber;
+import com.coco.common.UserHolder;
 import com.coco.config.Config;
 import com.coco.pojo.UserPojo;
 import com.coco.service.UserService;
@@ -69,9 +70,18 @@ public class LoginController{
         List<UserPojo> userInfo = userService.findOne(username);
         System.out.println(userInfo);
         String encryptedPassword = userInfo.get(0).getPassword();
+        int userId = userInfo.get(0).getUserId();
+        String userName = userInfo.get(0).getUserName();
+        UserHolder userHolder = UserHolder.getInstance();
+        userHolder.setUserId(userId);
+        userHolder.setUserName(userName);
+        userHolder.setEmail(userInfo.get(0).getEmail());
+        userHolder.setPhone(userInfo.get(0).getPhone());
+
         if(password.equals(encryptor.decrypt(encryptedPassword,encryptionKey))){
             Stage stage = CocoPractiseApplication.getStage();
             stage.close();
+
             Config.loginUser =  userInfo.get(0);
             CocoPractiseApplication.showView(HistoryView.class);
 

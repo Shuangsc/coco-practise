@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="EclipseModuleManager">
-    <conelement value="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" />
-    <src_description expected_position="0">
-      <src_folder value="file://$MODULE_DIR$/src/main/java" expected_position="0" />
-      <src_folder value="file://$MODULE_DIR$/src/main/resources" expected_position="1" />
-      <src_folder value="file://$MODULE_DIR$/src/test/java" expected_position="2" />
-    </src_description>
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -17,10 +14,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
-    <orderEntry type="library" name="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" level="application" />
-    <orderEntry type="library" name="JavaFX" level="project" />
     <orderEntry type="library" name="Maven: de.roskenet:springboot-javafx-support:2.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:3.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.7.9" level="project" />
@@ -83,11 +78,11 @@
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.7.9" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:19.0.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:19.0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:mac-aarch64:19.0.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:19.0.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:win:19.0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:mac-aarch64:19.0.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:19.0.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:19.0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac-aarch64:19.0.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.binding:fxml_2.11:11.9.0+56-3af5a32a" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.12" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.binding:binding_2.11:11.9.0+56-3af5a32a" level="project" />
@@ -124,6 +119,6 @@
     <orderEntry type="library" name="Maven: com.thoughtworks.q:q_2.10:1.0.4" level="project" />
     <orderEntry type="library" name="Maven: org.scalamacros:quasiquotes_2.10:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:11" level="project" />
-    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:11" level="project" />
+    <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac:11" level="project" />
   </component>
 </module>

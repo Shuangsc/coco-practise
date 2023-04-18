@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="650.0" style="-fx-background-color: #F2D400;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.ChartPageController">
+   <children>
+      <TabPane prefHeight="700.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Month">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="650.0">
+                     <children>
+                        <Separator layoutY="276.0" prefHeight="2.0" prefWidth="650.0" />
+                        <Label layoutX="255.0" layoutY="296.0" text="Consumption Trend">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pageIndexText" layoutX="276.0" layoutY="606.0" onKeyReleased="#pageIndex" prefHeight="15.0" prefWidth="35.0" />
+                        <PieChart fx:id="pieChart" layoutX="123.0" layoutY="104.0" prefHeight="164.0" prefWidth="413.0" />
+                        <BarChart fx:id="barChart" layoutX="74.0" layoutY="322.0" prefHeight="275.0" prefWidth="500.0">
+                          <xAxis>
+                            <CategoryAxis />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label fx:id="pageCount1" layoutX="331.0" layoutY="611.0" text="PageCount" />
+                        <Label layoutX="208.0" layoutY="611.0" text="Go to Page" />
+                        <Label layoutX="318.0" layoutY="607.0" prefHeight="17.0" prefWidth="11.0" text="/">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink fx:id="backToHistory3" layoutX="14.0" layoutY="14.0" onAction="#onJumpHistory" text="&lt;back" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Week">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="650.0">
+                     <children>
+                        <Separator layoutY="242.0" prefHeight="2.0" prefWidth="650.0" />
+                        <Label layoutX="248.0" layoutY="258.0" text="Consumption Trend">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pageIndexText1" layoutX="285.0" layoutY="515.0" onKeyReleased="#pageIndex1" prefHeight="15.0" prefWidth="35.0" />
+                        <Label layoutX="216.0" layoutY="520.0" text="Go To Page" />
+                        <Label layoutX="326.0" layoutY="518.0" text="/">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pageCount2" layoutX="342.0" layoutY="521.0" text="PageCount" />
+                        <PieChart fx:id="pieChart1" layoutX="105.0" layoutY="81.0" prefHeight="164.0" prefWidth="413.0" />
+                        <BarChart fx:id="barChart1" layoutX="75.0" layoutY="282.0" prefHeight="229.0" prefWidth="500.0">
+                           <xAxis>
+                              <CategoryAxis />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <Hyperlink fx:id="backToHistory2" layoutX="14.0" layoutY="14.0" onAction="#onJumpHistory" text="&lt;back" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Year">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="650.0">
+                     <children>
+                        <Separator layoutY="242.0" prefHeight="2.0" prefWidth="650.0" />
+                        <Label layoutX="248.0" layoutY="258.0" text="Consumption Trend">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="pageIndexText11" layoutX="286.0" layoutY="592.0" onKeyReleased="#pageIndex11" prefHeight="15.0" prefWidth="35.0" />
+                        <Label layoutX="216.0" layoutY="596.0" text="Go To Page" />
+                        <Label layoutX="323.0" layoutY="594.0" text="/">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pageCount3" layoutX="335.0" layoutY="596.0" text="PageCount" />
+                        <PieChart fx:id="pieChart11" layoutX="114.0" layoutY="72.0" prefHeight="164.0" prefWidth="413.0" />
+                        <BarChart fx:id="barChart11" layoutX="75.0" layoutY="292.0" prefHeight="293.0" prefWidth="500.0">
+                           <xAxis>
+                              <CategoryAxis />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <Hyperlink fx:id="backToHistory" layoutY="14.0" onAction="#onJumpHistory" text="&lt;back" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
