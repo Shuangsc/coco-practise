@@ -1,12 +1,11 @@
 package com.coco.controller;
 
-import java.io.IOException;
-import java.util.Random;
-
 import com.coco.CocoPractiseApplication;
+import com.coco.common.ConsumptionTypeHolder;
 import com.coco.common.OrderNumber;
 import com.coco.common.UserHolder;
-import com.coco.view.ChartPageView;
+import com.coco.service.OrderService;
+import com.coco.util.SpringContextUtil;
 import com.coco.view.ExpenditurePageView;
 import de.felixroske.jfxsupport.FXMLController;
 import javafx.event.ActionEvent;
@@ -14,12 +13,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.AnchorPane;
-import com.coco.service.OrderService;
-import com.coco.util.SpringContextUtil;
-import com.coco.common.ConsumptionTypeHolder;
 import javafx.stage.Stage;
-import com.coco.view.HistoryView;
-import javafx.scene.control.Hyperlink;
+
+import java.io.IOException;
+import java.util.Random;
 
 @FXMLController
 public class ExpenditureAmountController {

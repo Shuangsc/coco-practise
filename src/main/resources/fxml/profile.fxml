@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="750.0" styleClass="white-background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.ProfileController">
+    <top>
+        <VBox prefHeight="855.0" prefWidth="750.0" styleClass="white-background" stylesheets="/css/styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="CENTER" prefHeight="248.0" prefWidth="311.0" spacing="20.0">
+                    <children>
+                        <ImageView fitHeight="93.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/image/avatar.jpg" />
+                            </image>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </ImageView>
+                        <Label text="Hello,Pikachu">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="28.0" prefWidth="250.0">
+                            <children>
+                                <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="33.0" text="It's " textFill="#a7a29d">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label contentDisplay="CENTER" prefHeight="20.0" prefWidth="48.0" text="April" textFill="#f67f00">
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="176.0" text="save money now" textFill="#a7a29d">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox prefHeight="383.0" prefWidth="750.0" spacing="20.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/image/historyIcon.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="-20.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label contentDisplay="CENTER">
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Button fx:id="updateButton1" mnemonicParsing="false" onAction="#onUpdate" prefHeight="33.0" prefWidth="120.0" styleClass="primary-background" stylesheets="/css/styles.css" text="Update email">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Button>
+                                <TextField fx:id="emailField" text="email" />
+                            </children>
+                            <VBox.margin>
+                                <Insets left="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="250.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/image/summaryIcon.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label contentDisplay="CENTER">
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Button fx:id="updateButton2" mnemonicParsing="false" onAction="#onUpdate" prefHeight="33.0" prefWidth="120.0" styleClass="primary-background" stylesheets="/css/styles.css" text="Update phone">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Button>
+                                <TextField fx:id="phoneField"  text="phone"/>
+                            </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/image/home.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="12.0">
+                                    <font>
+                                        <Font name="Arial Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="home" mnemonicParsing="false" onAction="#onHome" prefHeight="33.0" prefWidth="91.0" styleClass="primary-background" stylesheets="/css/styles.css" text="Home">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="160.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="250.0">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="/image/logout.jpg" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="12.0">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="logout" mnemonicParsing="false" onAction="#onLogout" prefHeight="33.0" prefWidth="91.0" styleClass="primary-background" stylesheets="/css/styles.css" text="Log out">
+                                    <font>
+                                        <Font name="Arial Bold" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets right="160.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+
+<!--                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="250.0">-->
+<!--                            <children>-->
+<!--                                <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                                    <image>-->
+<!--                                        <Image url="/image/home.jpg" />-->
+<!--                                    </image>-->
+<!--                                    <HBox.margin>-->
+<!--                                        <Insets />-->
+<!--                                    </HBox.margin>-->
+<!--                                </ImageView>-->
+<!--                                <Label contentDisplay="CENTER" prefHeight="21.0" prefWidth="12.0">-->
+<!--                                    <font>-->
+<!--                                        <Font name="Arial Bold" size="18.0" />-->
+<!--                                    </font>-->
+<!--                                </Label>-->
+<!--                                <Button fx:id="home" mnemonicParsing="false" onAction="#onHome" prefHeight="33.0" prefWidth="91.0" styleClass="primary-background" stylesheets="/css/styles.css" text="Home">-->
+<!--                                    <font>-->
+<!--                                        <Font name="Arial Bold" size="18.0" />-->
+<!--                                    </font>-->
+<!--                                    <HBox.margin>-->
+<!--                                        <Insets right="160.0" />-->
+<!--                                    </HBox.margin>-->
+<!--                                </Button>-->
+<!--                            </children>-->
+<!--                        </HBox>-->
+
+
+                    </children>
+                    <VBox.margin>
+                        <Insets top="200.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>

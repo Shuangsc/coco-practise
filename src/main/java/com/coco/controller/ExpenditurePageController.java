@@ -1,21 +1,17 @@
 package com.coco.controller;
 
 import com.coco.CocoPractiseApplication;
-import com.coco.common.UserHolder;
+import com.coco.common.ConsumptionTypeHolder;
 import com.coco.view.ExpenditureAmountView;
 import com.coco.view.HistoryView;
 import de.felixroske.jfxsupport.FXMLController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import com.coco.common.ConsumptionTypeHolder;
-
 
 import java.io.IOException;
-
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
 @FXMLController
 public class ExpenditurePageController {
 	

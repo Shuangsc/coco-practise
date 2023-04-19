@@ -1,30 +1,25 @@
 package com.coco.controller;
 
 import com.coco.CocoPractiseApplication;
-import com.coco.common.OrderNumber;
 import com.coco.config.Config;
 import com.coco.pojo.OrderPojo;
 import com.coco.service.OrderService;
 import com.coco.util.SpringContextUtil;
-import com.coco.view.BookkeepingView;
 import com.coco.view.ChartPageView;
 import com.coco.view.ExpenditurePageView;
-import com.coco.view.SummaryView;
+import com.coco.view.ProfileView;
 import de.felixroske.jfxsupport.FXMLController;
-
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-//import jdk.javadoc.internal.doclets.formats.html.markup.Text;
 
 import java.net.URL;
 import java.text.NumberFormat;
@@ -121,45 +116,46 @@ public class HistoryController implements Initializable {
     private TableColumn<OrderPojo, String> descriptionCol;
      */
 
-    /*
-    @FXML
-    void onAdd(ActionEvent event) {
-        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
-        int userId = Integer.parseInt(userIdField.getText());
-        String type = typeField.getText();
-        double amount = Double.parseDouble(amountField.getText());
-        String date = dateField.getText();
-        String description = descriptionField.getText();
-        int orderId =OrderNumber.getOrderNumber(11);
 
-        orderService.orderInsert(orderId,userId,type,amount,date,description);
-        reFreshTable();
-
-    }
+//    @FXML
+//    void onAdd(ActionEvent event) {
+//        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
+//        int userId = Integer.parseInt(userIdField.getText());
+//        String type = typeField.getText();
+//        double amount = Double.parseDouble(amountField.getText());
+//        String date = dateField.getText();
+//        String description = descriptionField.getText();
+//        int orderId =OrderNumber.getOrderNumber(11);
+//
+//        orderService.orderInsert(orderId,userId,type,amount,date,description);
+//        reFreshTable();
+//
+//    }
 
     @FXML
     void onDel(ActionEvent event) {
         OrderService orderService = SpringContextUtil.getBean(OrderService.class);
-        orderService.orderDelete(Integer.parseInt(orderIdField.getText()));
-        reFreshTable();
+        int orderId = tableView.getSelectionModel().getSelectedItem().getOrderId();
+        //orderService.orderDelete(Integer.parseInt(orderIdField.getText()));
+        orderService.orderDelete(orderId);
+//        reFreshTable();
     }
 
-    @FXML
-    void onUpd(ActionEvent event) {
-        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
-        int userId = Integer.parseInt(userIdField.getText());
-        String type = typeField.getText();
-        Double amount = Double.parseDouble(amountField.getText());
-        String date = dateField.getText();
-        String descripton = descriptionField.getText();
-
-        int orderId = Integer.parseInt(orderIdField.getText());
-
-        orderService.orderUpdate(orderId,userId,type,amount,date,descripton);
-        reFreshTable();
-
-    }
-     */
+//    @FXML
+//    void onUpd(ActionEvent event) {
+//        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
+//        int userId = Integer.parseInt(userIdField.getText());
+//        String type = typeField.getText();
+//        Double amount = Double.parseDouble(amountField.getText());
+//        String date = dateField.getText();
+//        String descripton = descriptionField.getText();
+//
+//        int orderId = Integer.parseInt(orderIdField.getText());
+//
+//        orderService.orderUpdate(orderId,userId,type,amount,date,descripton);
+//        reFreshTable();
+//
+//    }
 
     @FXML
     void onJumpSum(ActionEvent event) {
@@ -172,10 +168,17 @@ public class HistoryController implements Initializable {
     @FXML
     void onJumpBok(ActionEvent event) {
         Stage stage = CocoPractiseApplication.getStage();
-//        stage.close();
+        stage.close();
         CocoPractiseApplication.showView(ExpenditurePageView.class);
     }
 
+    @FXML
+    void onJumpProfile(ActionEvent event) {
+        Stage stage = CocoPractiseApplication.getStage();
+        stage.close();
+        CocoPractiseApplication.showView(ProfileView.class);
+
+    }
 
 
     @Override
@@ -187,10 +190,12 @@ public class HistoryController implements Initializable {
         descriptColumn.setCellValueFactory(new PropertyValueFactory<>("descriptionProperty"));
         OrderService orderService = SpringContextUtil.getBean(OrderService.class);
         List<OrderPojo> list = orderService.findByUserId(Config.loginUser.getUserId());
+        System.out.println("history page order list:  "+list);
         double sum =0;
         for (int i = 0; i <list.size() ; i++) {
             sum-= list.get(i).getAmount();
         }
+
 
         NumberFormat nf = NumberFormat.getNumberInstance();
         nf.setMaximumFractionDigits(2);
@@ -199,6 +204,7 @@ public class HistoryController implements Initializable {
 
         ObservableList<OrderPojo> observableList  = FXCollections.observableList(list);
         tableView.setItems(observableList);
+       // tableView.refresh();
 
         user.setText(Config.loginUser.getUserName());
 
@@ -220,16 +226,17 @@ public class HistoryController implements Initializable {
 
         String outComeStr = nf.format(outCome);
         incomeTxt.setText(outComeStr+"");
+//        reFreshTable();
 
     }
 
 //    public void reFreshTable(){
 //        OrderService orderService = SpringContextUtil.getBean(OrderService.class);
-//        List<OrderPojo> list = orderService.findAll();
+//        List<OrderPojo> list = orderService.findoutComeList(Config.loginUser.getUserId());
 //        ObservableList<OrderPojo> observableList  = FXCollections.observableList(list);
 //        tableView.setItems(observableList);
 //    }
-//     */
+
 }
 
 

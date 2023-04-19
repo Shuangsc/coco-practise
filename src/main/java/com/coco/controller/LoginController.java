@@ -9,11 +9,16 @@ import com.coco.pojo.UserPojo;
 import com.coco.service.UserService;
 import com.coco.util.SpringContextUtil;
 import com.coco.view.HistoryView;
+import com.coco.view.SignUpView;
 import de.felixroske.jfxsupport.FXMLController;
-import javafx.scene.control.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -26,7 +31,7 @@ import java.util.List;
 
 @FXMLController
 
-public class LoginController{
+public class LoginController {
 
     @FXML
     public TextField usernameTextField;
@@ -90,6 +95,13 @@ public class LoginController{
         }
     }
 
+    @FXML
+    void onJumpCreate(ActionEvent event) {
+        Stage stage = CocoPractiseApplication.getStage();
+        stage.close();
+        CocoPractiseApplication.showView(SignUpView.class);
+
+    }
     @FXML
     void createAccount(ActionEvent event) throws NoSuchPaddingException, InvalidKeyException, NoSuchAlgorithmException, IllegalBlockSizeException, BadPaddingException, InvalidAlgorithmParameterException {
         UserService userService = SpringContextUtil.getBean(UserService.class);

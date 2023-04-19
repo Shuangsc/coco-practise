@@ -1,16 +1,12 @@
 package com.coco.controller;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.*;
-import com.coco.view.HistoryView;
 import com.coco.CocoPractiseApplication;
 import com.coco.common.UserHolder;
-import com.coco.config.Config;
-import com.coco.view.ExpenditurePageView;
+import com.coco.pojo.OrderPojo;
+import com.coco.service.OrderService;
+import com.coco.util.SpringContextUtil;
 import com.coco.view.HistoryView;
+import de.felixroske.jfxsupport.FXMLController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -19,20 +15,17 @@ import javafx.fxml.Initializable;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
-import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import com.coco.pojo.OrderPojo;
-import com.coco.service.OrderService;
-import com.coco.util.SpringContextUtil;
-import de.felixroske.jfxsupport.FXMLController;
 import javafx.stage.Stage;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.ResourceBundle;
-import javafx.scene.control.Hyperlink;
 
 @FXMLController
 public class ChartPageController implements Initializable {
@@ -168,7 +161,7 @@ public class ChartPageController implements Initializable {
 			pageCount1.setText(String.valueOf(list.size()/pageCount+1));
 		}
 		XYChart.Series series = new XYChart.Series();
-		series.setName("Month Rank");
+		series.setName("Month Detail");
 
 		if (list.size() != 0) {
 			barChart.getData().clear();
@@ -211,7 +204,7 @@ public class ChartPageController implements Initializable {
 			pageCount2.setText(String.valueOf(list.size()/pageCount+1));
 		}
 		XYChart.Series series1 = new XYChart.Series();
-		series1.setName("Week Rank");
+		series1.setName("Week Detail");
 		if (listWeek.size() != 0) {
 			barChart1.getData().clear();
 			int start=(Integer.valueOf(pageIndexText1.getText())-1)*pageCount;
@@ -256,7 +249,7 @@ public class ChartPageController implements Initializable {
 			pageCount3.setText(String.valueOf(listYear.size()/pageCount+1));
 		}
 		XYChart.Series series11 = new XYChart.Series();
-		series11.setName("Year Rank");
+		series11.setName("Year Detail");
 
 		if (listYear.size() != 0) {
 			barChart11.getData().clear();

@@ -13,7 +13,7 @@
 <?import javafx.scene.image.ImageView?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.SignUpController">
     <children>
         <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F8DA60;">
             <VBox maxWidth="240" spacing="20">
@@ -31,8 +31,9 @@
                         </StackPane.margin>
                     </CheckBox>
                 </StackPane>
-                <Button onAction="#loginHandler" prefWidth="240" text="login" />
-                <Button mnemonicParsing="false" onAction="#onJumpCreate" prefHeight="25.0" prefWidth="254.0" text="Create Account" />
+                <TextField fx:id="emailTextField" promptText="email" />
+                <TextField fx:id="phoneTextField" promptText="phone" />
+                <Button mnemonicParsing="false" onAction="#createAccount" prefHeight="25.0" prefWidth="254.0" text="Sign Up" />
             </VBox>
         </VBox>
         <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">

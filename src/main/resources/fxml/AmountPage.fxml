@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#initTypeValue" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #F2D400;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.ExpenditureAmountController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="-Infinity" onMouseEntered="#initTypeValue" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #F2D400;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.coco.controller.ExpenditureAmountController">
    <children>
       <TextField fx:id="AmountText" focusTraversable="false" layoutX="142.0" layoutY="250.0" prefHeight="0.0" prefWidth="185.0" />
       <DatePicker fx:id="datepicker" focusTraversable="false" layoutX="142.0" layoutY="182.0" />

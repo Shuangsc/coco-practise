@@ -91,7 +91,7 @@
          <graphic>
             <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" scaleX="1.1">
                <image>
-                  <Image url="/images/Necessity.png" />
+                  <Image url="/image/Necessity.png" />
                </image>
             </ImageView>
          </graphic></Button>
